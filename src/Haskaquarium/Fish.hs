@@ -6,7 +6,7 @@ module Haskaquarium.Fish
 import Haskaquarium.Types
 
 data Fish = Fish { name :: Name
-                 , sex  :: Sexe
+                 , sex  :: Sex
                  } deriving (Show, Eq)
 
 data Sex = Male | Female
