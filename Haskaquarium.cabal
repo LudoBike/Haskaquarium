@@ -7,13 +7,13 @@ synopsis:            Haskell implementation of Javaquarium (https://zestedesavoi
 -- description:         
 homepage:            https://github.com/LudoBike/Haskaquarium/tree/master
 license:             WTFPL
-license-file:        LICENSE
+license-file:        License.md
 author:              LudoBike
 maintainer:          ludovicdruette@gmail.com
 -- copyright:           
 -- category:            
 build-type:          Simple
-extra-source-files:  ChangeLog.md, README.md
+extra-source-files:  README.md
 cabal-version:       >=1.10
 
 executable Haskaquarium
