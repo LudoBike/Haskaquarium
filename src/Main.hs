@@ -6,9 +6,6 @@
 
 module Main where
 
-import System.IO
-
 -- 'main' runs the main program
 main :: IO ()
-main = putStrLn "Hello World !"
-
+main = putStrLn "Hello, Haskell!"
