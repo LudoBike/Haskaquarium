@@ -20,17 +20,17 @@ letTime a = a
 
 -- 'showState' show the state of an aquarium properly
 showState :: Aquarium -> String
-showState (Aquarium f s) = showNbr (length f) s ++ showFishes f
+showState (Aquarium f s) = showNbr (length f) s ++ showFishes f ++ "\n"
 
 -- 'showNbr' show the number of fish and seaweed properly
-showNbr :: Integral a => a -> a -> String
-showNbr fishes seaweeds = "There is " ++ f ++ " fish(es) and " ++ s ++ "seaweed(s)."
+showNbr :: Int -> Int -> String
+showNbr fishes seaweeds = "There is " ++ f ++ " fish(es) and " ++ s ++ " seaweed(s).\n"
   where f = show fishes
         s = show seaweeds
 
 showFishes :: [Fish] -> String
 showFishes = foldr f ""
-  where f (Fish n s) acc = "\n- " ++ n ++ (' ':show s) ++ acc
+  where f (Fish n s) acc = "- " ++ n ++ (' ':show s) ++ '\n':acc
 
 -- 'addSeaweed' add a seaweed to an Aquarium
 addSeaweed :: Aquarium -> Aquarium
